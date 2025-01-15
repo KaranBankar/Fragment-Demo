@@ -3,6 +3,7 @@ package com.example.fragmentdemo;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.FrameLayout;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
@@ -46,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
                     fragment=new HomeFragment();
                 }
                 loadFrag(fragment);
+                Toast.makeText(MainActivity.this, "Hii", Toast.LENGTH_SHORT).show();
                 return true;
             }
         });
